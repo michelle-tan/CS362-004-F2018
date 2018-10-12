@@ -1355,7 +1355,7 @@ int play_adventurer(struct gameState* state, int currentPlayer){
 //  int currentPlayer = whoseTurn(state);
 
   while(drawntreasure < 2){
-      if(state->deckCount[currentPlayer]){
+      if(state->deckCount[currentPlayer] < 1){
         shuffle(currentPlayer, state);
       }
       drawCard(currentPlayer, state);
