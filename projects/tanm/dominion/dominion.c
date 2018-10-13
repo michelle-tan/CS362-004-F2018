@@ -1244,15 +1244,15 @@ int updateCoins(int player, struct gameState *state, int bonus)
 
 int play_adventurer(struct gameState* state, int currentPlayer){
 
-  int drawntreasure = 0;
+  // BUG
+  int drawntreasure;
   int cardDrawn;
 
   int temphand[MAX_HAND];// moved above the if statement
   int temphandIdx = 0;
 
-//  int currentPlayer = whoseTurn(state);
-
-  while(drawntreasure < 2){
+  // BUG
+  while(drawntreasure < 3){
       if(state->deckCount[currentPlayer] < 1){
         shuffle(currentPlayer, state);
       }
@@ -1267,7 +1267,7 @@ int play_adventurer(struct gameState* state, int currentPlayer){
         temphandIdx++;
       }
   }
-  while(temphandIdx-1 >= 0){
+  while(temphandIdx > 0){
     state->discard[currentPlayer][state->discardCount[currentPlayer]++] = temphand[temphandIdx-1]; // discard all cards in play that have been drawn
     temphandIdx--;
   }
@@ -1276,7 +1276,6 @@ int play_adventurer(struct gameState* state, int currentPlayer){
 
 // smithy
 int play_smithy(struct gameState* state, int currentPlayer, int handPos){
-//  int currentPlayer = whoseTurn(state);
   //+3 Cards
   int i;
   for (i = 0; i < 3; i++){
@@ -1284,15 +1283,14 @@ int play_smithy(struct gameState* state, int currentPlayer, int handPos){
   }
 
   //discard card from hand
-  discardCard(handPos, currentPlayer, state, 0);
+  // BUG
+  discardCard(currentPlayer, handPos, state, 0);
   return 0;
 }
 
 
 // council_room
 int play_council_room(struct gameState* state, int currentPlayer, int handPos){
-
-  //int currentPlayer = whoseTurn(state);
 
   //+4 Cards
   int i;
@@ -1301,7 +1299,8 @@ int play_council_room(struct gameState* state, int currentPlayer, int handPos){
   }
 
   //+1 Buy
-  state->numBuys++;
+  // BUG
+// state->numBuys++;
 
   //Each other player draws a card
   for (i = 0; i < state->numPlayers; i++){
@@ -1318,7 +1317,6 @@ int play_council_room(struct gameState* state, int currentPlayer, int handPos){
 
 // village
 int play_village(struct gameState* state, int currentPlayer, int handPos){
-//  int currentPlayer = whoseTurn(state);
   //+1 Card
   drawCard(currentPlayer, state);
 
@@ -1334,19 +1332,21 @@ int play_village(struct gameState* state, int currentPlayer, int handPos){
 // mine
 
 int play_mine(struct gameState* state, int currentPlayer, int choice1, int choice2, int handPos){
-//  int currentPlayer = whoseTurn(state);
   int trashedCard = state->hand[currentPlayer][choice1];  //store card we will trash
 
   if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold){
-    return -1;
+   // BUG
+    return 1;
   }
 
   if (choice2 > treasure_map || choice2 < curse){
-    return -1;
+  // BUG
+    return 1;
   }
-
-  if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) ){
-    return -1;
+ // BUG
+  if ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice1) ){
+  // BUG
+    return 1;
   }
 
   gainCard(choice2, state, 2, currentPlayer);
