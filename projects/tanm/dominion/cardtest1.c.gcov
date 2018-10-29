@@ -1,0 +1,178 @@
+        -:    0:Source:cardtest1.c
+        -:    0:Graph:cardtest1.gcno
+        -:    0:Data:cardtest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:
+        -:    2:#include <assert.h>
+        -:    3:#include <stdio.h>
+        -:    4:#include <stdlib.h>
+        -:    5:#include <string.h>
+        -:    6:#include <math.h>
+        -:    7:#include "dominion.h"
+        -:    8:#include "interface.h"
+        -:    9:#include "rngs.h"
+        -:   10:#include "myTestUtilities.h"
+        -:   11:
+        -:   12:
+function testVillage called 486 returned 100% blocks executed 57%
+      486:   13:void testVillage(struct gameState* state){
+        -:   14:  struct gameState stateCopy;
+      486:   15:  memcpy(&stateCopy, state, sizeof(struct gameState));
+      486:   16:  int copy_currentHandCount = stateCopy.handCount[stateCopy.whoseTurn];
+      486:   17:  int copy_currentDeckCount = stateCopy.deckCount[stateCopy.whoseTurn];
+      486:   18:  int copy_currentDiscardCount = stateCopy.discardCount[stateCopy.whoseTurn];
+      486:   19:  cardEffect(village, 0, 0, 0, state, copy_currentHandCount-1, NULL);
+call    0 returned 100%
+      486:   20:  int currentHandCount = state->handCount[state->whoseTurn];
+      486:   21:  int currentDeckCount = state->deckCount[state->whoseTurn];
+        -:   22:
+        -:   23:
+      486:   24:  if(state->numActions != stateCopy.numActions+2){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   25:    printf("FAILED TEST:village did not increase numActions by 2.\n");
+call    0 never executed
+    #####:   26:	printf(" \tnumActions before village: %d\n\tnumActions after village: %d\n", stateCopy.numActions, state->numActions);
+call    0 never executed
+        -:   27:  }
+        -:   28:
+      486:   29:  if(state->numBuys != stateCopy.numBuys){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   30:    printf("FAILED TEST:village changed numBuys\n");
+call    0 never executed
+    #####:   31:	printf("\tnumBuys before village: %d\n\tnumBuys after village: %d\n", stateCopy.numBuys, state->numBuys);
+call    0 never executed
+        -:   32:  }
+        -:   33:
+      486:   34:  if(state->whoseTurn != stateCopy.whoseTurn){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   35:    printf("FAILED TEST:village changed whoseTurn\n");
+call    0 never executed
+    #####:   36:	printf("\tcurrentPlayer before village: %d\n\tcurrentPlayer after village: %d\n", stateCopy.whoseTurn, state->whoseTurn);
+call    0 never executed
+        -:   37:  }
+        -:   38:
+        -:   39:// did the handCount stay the same
+      486:   40:  if(currentHandCount != copy_currentHandCount ){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   41:    printf("FAILED TEST:hand count did not stay the same.\n");
+call    0 never executed
+    #####:   42:	printf("\thandCount before village: %d\n\thandCount after village: %d\n", copy_currentHandCount , currentHandCount);
+call    0 never executed
+        -:   43:  }
+        -:   44:
+        -:   45:// if there were not enough cards in the deck to draw,
+      486:   46:  if(copy_currentDeckCount < 1){
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+        -:   47:// discard should have been moved to the deck
+      162:   48:    if(currentDeckCount != copy_currentDiscardCount- 1){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   49:		printf("FAILED TEST: deck not decremented after moving discard to deck\n");
+call    0 never executed
+        -:   50:    }
+        -:   51:  }
+        -:   52:  else{
+        -:   53:// did the deckCount decrease by 1
+      324:   54:    if(currentDeckCount != copy_currentDeckCount  - 1){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   55:      printf("FAILED TEST: deck did not decrease by 1 - deck had sufficient cards.\n");
+call    0 never executed
+    #####:   56:	  printf("\tdeckCount before village: %d\n\tdeckCount after village: %d\n", copy_currentDeckCount , currentDeckCount);
+call    0 never executed
+        -:   57:    }
+        -:   58:  }
+        -:   59:// did the most recent hand card come from the deck, or is it still the card being tested?
+      486:   60:    if(state->hand[state->whoseTurn][copy_currentHandCount-1] == village){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   61:      printf("FAILED TEST: last card in hand is still village\n");
+call    0 never executed
+        -:   62:    }
+        -:   63:
+        -:   64:// did the card get put in the discard?
+      486:   65:  if(state->discardCount[state->whoseTurn] != stateCopy.discardCount[stateCopy.whoseTurn]+1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      486:   66:    printf("FAILED TEST:discard pile did not increment\n");
+call    0 returned 100%
+      486:   67:    printf("\tdiscardCount before: %d\n\tdiscardCount after: %d\n", stateCopy.discardCount[stateCopy.whoseTurn], state->discardCount[state->whoseTurn]);
+call    0 returned 100%
+        -:   68:  }
+        -:   69:
+      486:   70:  if(state->discard[state->whoseTurn][state->discardCount[state->whoseTurn]] != village){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      486:   71:    printf("FAILED TEST: top of discard pile is not village\n");
+call    0 returned 100%
+        -:   72:  }
+      486:   73:}
+        -:   74:
+        -:   75:
+function main called 1 returned 100% blocks executed 96%
+        1:   76:int main(){
+        -:   77:  struct gameState state;
+        1:   78:  int fillCard[] = {gardens, copper, adventurer};
+        1:   79:  int fillCardLength = 3;
+        1:   80:  int fillCardIdx_1 = 0;
+        1:   81:  int fillCardIdx_2 = 0;
+        1:   82:  int fillCardIdx_3 = 0;
+        -:   83:
+        1:   84:  int numPlayers[] = {2, MAX_PLAYERS};
+        1:   85:  int numPlayersLength = 2;
+        1:   86:  int numPlayersIdx = 0;
+        -:   87:
+        1:   88:  int handCount[] = {1, 5, MAX_HAND};
+        1:   89:  int handCountLength = 3;
+        1:   90:  int handCountIdx = 0;
+        -:   91:
+        1:   92:  int deckCount[] = {0, 5, MAX_DECK};
+        1:   93:  int deckCountLength = 3;
+        1:   94:  int deckCountIdx = 0;
+        -:   95: 
+        3:   96:  for(numPlayersIdx=0; numPlayersIdx < numPlayersLength; numPlayersIdx++){
+branch  0 taken 67%
+branch  1 taken 33% (fallthrough)
+        8:   97:	for(fillCardIdx_1=0; fillCardIdx_1 < fillCardLength; fillCardIdx_1++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+       24:   98:		for(handCountIdx=0; handCountIdx < handCountLength; handCountIdx++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+       72:   99:	  		for(fillCardIdx_2=0; fillCardIdx_2 < fillCardLength; fillCardIdx_2++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+      216:  100:				for(deckCountIdx=0; deckCountIdx < deckCountLength; deckCountIdx++){			 
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+      648:  101:					for(fillCardIdx_3=0; fillCardIdx_3 < fillCardLength; fillCardIdx_3++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+      486:  102:						constructGameStates(&state, numPlayers[numPlayersIdx], 0, handCount[handCountIdx], deckCount[deckCountIdx], fillCard[fillCardIdx_1], fillCard[fillCardIdx_2], fillCard[fillCardIdx_3],1 ,1);
+call    0 returned 100%
+        -:  103:
+      486:  104:					    if(handCount == MAX_HAND){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  105:					      state.handCount[state.whoseTurn] -= 1;
+        -:  106:					    }
+        -:  107:						if(handCount < 0){printf("handCountIdx: %d\n", handCountIdx);}						
+        -:  108:						if(deckCount < 0){printf("deckCountIdx: %d\n", deckCountIdx);}						
+      486:  109:    					state.hand[state.whoseTurn][state.handCount[state.whoseTurn]-1] = village;
+      486:  110:					    testVillage(&state);
+call    0 returned 100%
+        -:  111:						
+        -:  112:					}
+        -:  113:				}
+        -:  114:			}
+        -:  115:		}
+        -:  116:	}
+        -:  117:  }
+        -:  118:
+        -:  119:}

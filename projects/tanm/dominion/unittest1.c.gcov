@@ -1,0 +1,312 @@
+        -:    0:Source:unittest1.c
+        -:    0:Graph:unittest1.gcno
+        -:    0:Data:unittest1.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <assert.h>
+        -:    2:#include <stdio.h>
+        -:    3:#include <stdlib.h>
+        -:    4:#include <string.h>
+        -:    5:#include <math.h>
+        -:    6:#include "dominion.h"
+        -:    7:#include "interface.h"
+        -:    8:#include "rngs.h"
+        -:    9:#include "myTestUtilities.h"
+        -:   10:
+        -:   11:// examine gameState
+function examineGameState called 4 returned 100% blocks executed 67%
+        4:   12:int examineGameState(int numPlayers, struct gameState* state){
+        4:   13:  if(numPlayers == 2){
+branch  0 taken 25% (fallthrough)
+branch  1 taken 75%
+        1:   14:    if(state->supplyCount[curse] != 10){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   15:      return curse;
+        -:   16:    }
+        1:   17:    if(state->supplyCount[estate] != 8){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   18:      return estate;
+        -:   19:    }
+        1:   20:    if(state->supplyCount[duchy] != 8){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   21:      return duchy;
+        -:   22:    }
+        1:   23:    if(state->supplyCount[province] != 8){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   24:      return province;
+        -:   25:    }
+        -:   26:  }
+        -:   27:  else{
+        3:   28:    if(numPlayers == 3){
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+        2:   29:      if(state->supplyCount[curse] != 20){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   30:        return curse;
+        -:   31:      }
+        -:   32:	}
+        -:   33:    else{
+        1:   34:      if(state->supplyCount[curse] != 30){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   35:        return curse;
+        -:   36:      }
+        -:   37:    }
+        -:   38:  
+        3:   39:    if(state->supplyCount[estate] != 12){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   40:      return estate;
+        -:   41:    }
+        3:   42:    if(state->supplyCount[duchy] != 12){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   43:      return duchy;
+        -:   44:    }
+        3:   45:    if(state->supplyCount[province] != 12){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   46:      return province;
+        -:   47:    }
+        -:   48:  }
+        4:   49:  if(state->supplyCount[copper] != 60 - (7* numPlayers)){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   50:    return copper;
+        -:   51:  }
+        4:   52:  if(state->supplyCount[silver] != 40){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   53:    return silver;
+        -:   54:  }
+        4:   55:  if(state->supplyCount[gold] != 30){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   56:    return gold;
+        -:   57:  }
+        -:   58:
+        -:   59:// for each player, check that their decks have the appropriate number of cards
+        -:   60:  int i, j;
+        -:   61:  int numCoppers, numEstates;
+       16:   62:  for(i = 0; i < numPlayers; i++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+       12:   63:    numCoppers = 0;
+       12:   64:    numEstates = 0;
+        -:   65:
+       12:   66:    if(i==state->whoseTurn){
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+        4:   67:      if(state->deckCount[i] != 5){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   68:        return -3;
+        -:   69:      }
+        4:   70:      if(state->handCount[i] != 5){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   71:        return -4;
+        -:   72:      }
+        -:   73:    }
+        -:   74:	else{
+        8:   75:      if(state->deckCount[i] != 10){return -3;}
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        8:   76:      if(state->handCount[i] != 0){return -4;}
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:   77:	}
+       32:   78:    for(j = 0 ; j < state->handCount[i] ; j++){
+branch  0 taken 63%
+branch  1 taken 38% (fallthrough)
+       20:   79:      if(state->hand[i][j] == copper){
+branch  0 taken 80% (fallthrough)
+branch  1 taken 20%
+       16:   80:        numCoppers++;
+       16:   81:        continue;
+        -:   82:      }
+        4:   83:      if(state->hand[i][j] == estate){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+        4:   84:        numEstates++;
+        4:   85:        continue;
+        -:   86:      }
+        -:   87:    }
+       12:   88:	if(i==state->whoseTurn && state->coins!= numCoppers){
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+    #####:   89:	  return -13;
+        -:   90:	}
+      112:   91:    for(j = 0 ; j < state->deckCount[i] ; j++){
+branch  0 taken 89%
+branch  1 taken 11% (fallthrough)
+      100:   92:      if(state->deck[i][j] == copper){
+branch  0 taken 68% (fallthrough)
+branch  1 taken 32%
+       68:   93:        numCoppers++;
+       68:   94:        continue;
+        -:   95:      }
+       32:   96:      if(state->deck[i][j] == estate){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+       32:   97:        numEstates++;
+       32:   98:        continue;
+        -:   99:      }
+        -:  100:    }
+       12:  101:    if(numCoppers != 7){return -5;}
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+       12:  102:    if(numEstates != 3){return -5;}
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+        -:  103:  }
+      112:  104:  for (i = 0; i <= treasure_map; i++){
+branch  0 taken 96%
+branch  1 taken 4% (fallthrough)
+      108:  105:    if(state->embargoTokens[i] != 0){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  106:      return -6;
+        -:  107:    }
+        -:  108:  }
+        -:  109:
+        4:  110:  if(state->outpostPlayed != 0){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  111:    return -7;
+        -:  112:  }
+        4:  113:  if(state->phase != 0){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  114:    return -8;
+        -:  115:  }
+        4:  116:  if(state->numActions != 1){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  117:    return -9;
+        -:  118:  }
+        4:  119:  if(state->numBuys != 1){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  120:    return -10;
+        -:  121:  }
+        4:  122:  if(state->playedCardCount != 0){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  123:    return -11;
+        -:  124:  }
+        4:  125:  if(state->whoseTurn != 0){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  126:    return -12;
+        -:  127:  }
+        4:  128:  return -1;
+        -:  129:}
+        -:  130:
+        -:  131:
+        -:  132:// test initializeGame
+function testInitializeGame called 7 returned 100% blocks executed 67%
+        7:  133:void testInitializeGame(int seed, int numPlayers, int repetitiveSupply, int expectedReturnValue, char* testName){
+        -:  134:
+        -:  135:  int* kingdom;
+        -:  136:  struct gameState state;
+        -:  137:  int returnValue;
+        7:  138:  int failure = -1;  // -1 is a passing grade
+        -:  139:
+        7:  140:  kingdom = kingdomCards(adventurer, baron, great_hall, feast, gardens, treasure_map, smithy, minion, sea_hag, mine);
+call    0 returned 100%
+        -:  141: 
+        7:  142:  if(repetitiveSupply){
+branch  0 taken 14% (fallthrough)
+branch  1 taken 86%
+        1:  143:    kingdom = memset(kingdom, adventurer, 10*sizeof(int));
+        -:  144:  }
+        -:  145:
+        7:  146:  returnValue = initializeGame(numPlayers, kingdom, seed, &state);
+call    0 returned 100%
+        -:  147:
+        -:  148:  
+        7:  149:  if(returnValue == -1 && expectedReturnValue == -1){
+branch  0 taken 43% (fallthrough)
+branch  1 taken 57%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        3:  150:	free(kingdom);
+       10:  151:	return;
+        -:  152:  }
+        -:  153:
+        4:  154:  if(returnValue != expectedReturnValue){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  155:    failure = -2; // -2 means return value unexpected
+        -:  156:  }
+        -:  157:
+        4:  158:  if(returnValue == 0 && expectedReturnValue == 0){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+        -:  159:// look at the gamestate with respect to number of players and see if things are as expected
+        4:  160:    failure = examineGameState(numPlayers, &state);  // 0 and above corresponds to the card that didn't make sense.
+call    0 returned 100%
+        -:  161:  }
+        -:  162:
+        4:  163:  if(failure != -1){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  164:    printf("FAILED: %s WITH CODE %d\n", testName, failure);
+call    0 never executed
+    #####:  165:    printf("Expected return value: %d\n", expectedReturnValue);
+call    0 never executed
+    #####:  166:    printf("Actual return value: %d\n", returnValue);
+call    0 never executed
+    #####:  167:    printf("numPlayers = %d\n", numPlayers);
+call    0 never executed
+    #####:  168:    printKingdomCards_(kingdom);
+call    0 never executed
+    #####:  169:    printState_(&state);
+call    0 never executed
+        -:  170:  }
+        -:  171:
+        4:  172:  free(kingdom);
+        -:  173:}
+        -:  174:
+function main called 1 returned 100% blocks executed 100%
+        1:  175:int main(){
+        1:  176:  int seed = 1;
+        -:  177:// more than MAX_PLAYERS players, no duplicates in kingdom cards, expect return -1
+        1:  178:  testInitializeGame(seed, MAX_PLAYERS+1, 0, -1, "numPlayers > MAX_PLAYERS");
+call    0 returned 100%
+        -:  179:
+        -:  180:// fewer than MAX_PLAYERS players, no duplicates in kingdomCards, expect return 0
+        1:  181:  testInitializeGame(seed, MAX_PLAYERS-1, 0, 0, "numPlayers < MAX_PLAYERS");
+call    0 returned 100%
+        -:  182:
+        -:  183:// exactly MAX_PLAYERS players, no duplicates in kingdomCards, expect return 0
+        1:  184:  testInitializeGame(seed, MAX_PLAYERS, 0, 0, "numPlayers = MAX_PLAYERS");
+call    0 returned 100%
+        -:  185:
+        -:  186:// more than 2 players, no duplicates in kingdom cards, expect return 0
+        1:  187:  testInitializeGame(seed, 3, 0, 0, "numPlayers > 2");
+call    0 returned 100%
+        -:  188:
+        -:  189:// fewer than 2 players, no duplicates in kingdomCards, expect return -1
+        1:  190:  testInitializeGame(seed, 1, 0, -1, "numPlayers < 2");
+call    0 returned 100%
+        -:  191:
+        -:  192:// exactly 2 players, no duplicates in kingdomCards, expect return 0
+        1:  193:  testInitializeGame(seed, 2, 0, 0, "numPlayers = 2");
+call    0 returned 100%
+        -:  194:
+        -:  195:// valid numPlayers, kingdomCards all adventurers, expect return -1
+        1:  196:  testInitializeGame(seed, 2, 1, -1, "kingdomCards are all adventurers");
+call    0 returned 100%
+        -:  197:
+        -:  198:}

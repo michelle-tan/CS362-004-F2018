@@ -1,0 +1,88 @@
+        -:    0:Source:unittest2.c
+        -:    0:Graph:unittest2.gcno
+        -:    0:Data:unittest2.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <assert.h>
+        -:    2:#include <stdio.h>
+        -:    3:#include <stdlib.h>
+        -:    4:#include <string.h>
+        -:    5:#include <math.h>
+        -:    6:#include "dominion.h"
+        -:    7:#include "interface.h"
+        -:    8:#include "rngs.h"
+        -:    9:#include "myTestUtilities.h"
+        -:   10:
+function testIsGameOver called 6 returned 100% blocks executed 79%
+        6:   11:void testIsGameOver(int seed, int emptyProvincePile, int numOtherEmptyPiles, int expectedReturnValue, char* testName){
+        -:   12:  int returnValue;
+        -:   13:  struct gameState state;
+        -:   14:
+        6:   15:  int* kingdom = kingdomCards(7,8,9,10,11,12,13,14,15,16); // adventurer thru great_hall
+call    0 returned 100%
+        -:   16:
+        6:   17:  initializeGame(2, kingdom, seed, &state);
+call    0 returned 100%
+        -:   18:
+        6:   19:  if(emptyProvincePile){
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+        2:   20:    state.supplyCount[province] = 0;
+        -:   21:  }
+        -:   22:  else{
+        4:   23:    state.supplyCount[province] = 8;
+        -:   24:  }
+        -:   25:
+        -:   26:  int i;
+       18:   27:  for(i = 0; i < numOtherEmptyPiles; i++){
+branch  0 taken 67%
+branch  1 taken 33% (fallthrough)
+       12:   28:    state.supplyCount[i+7] = 0;
+        -:   29:  }
+        -:   30:
+        6:   31:  returnValue = isGameOver(&state);
+call    0 returned 100%
+        -:   32:
+        6:   33:  if(returnValue != expectedReturnValue){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   34:    printf("FAILED TEST: %s WITH RETURN VALUE %d (EXPECTED: %d)\n", testName, returnValue, expectedReturnValue);
+call    0 never executed
+    #####:   35:    printKingdomCards_(kingdom);
+call    0 never executed
+    #####:   36:    printState_(&state);
+call    0 never executed
+        -:   37:  }
+        -:   38:
+        6:   39:  free(kingdom);
+        -:   40:
+        6:   41:}
+        -:   42:
+function main called 1 returned 100% blocks executed 100%
+        1:   43:int main() {
+        1:   44:  int seed = 1;
+        -:   45:// game should not be over - provinces not empty, no empty piles
+        1:   46:  testIsGameOver(seed, 0, 0, 0, "provinces not empty, no empty supply piles.");
+call    0 returned 100%
+        -:   47:
+        -:   48:// game is over - provinces empty, all supply piles full
+        1:   49:  testIsGameOver(seed, 1, 0, 1, "provinces empty, no empty supply piles.");
+call    0 returned 100%
+        -:   50:
+        -:   51:// game is not over - provinces not empty, 2 supply piles empty
+        1:   52:    testIsGameOver(seed, 0, 2, 0, "provinces not empty, 2 empty supply piles.");
+call    0 returned 100%
+        -:   53:
+        -:   54:// game is over - provinces not empty, 3 supply piles empty
+        1:   55:  testIsGameOver(seed, 0, 3, 1, "provinces not empty, 3 empty supply piles.");
+call    0 returned 100%
+        -:   56:
+        -:   57:// game is over - provinces not empty, 4 supply piles empty
+        1:   58:  testIsGameOver(seed, 0, 4, 1, "provinces not empty, 3 empty supply piles.");
+call    0 returned 100%
+        -:   59:
+        -:   60:// game is over - provinces empty AND 3 supply piles empty
+        1:   61:    testIsGameOver(seed, 1, 3, 1, "provinces empty, 3 empty supply piles.");
+call    0 returned 100%
+        -:   62:
+        -:   63:}

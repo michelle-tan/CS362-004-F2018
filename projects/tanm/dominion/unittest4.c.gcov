@@ -1,0 +1,83 @@
+        -:    0:Source:unittest4.c
+        -:    0:Graph:unittest4.gcno
+        -:    0:Data:unittest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <assert.h>
+        -:    2:#include <stdio.h>
+        -:    3:#include <stdlib.h>
+        -:    4:#include <string.h>
+        -:    5:#include <math.h>
+        -:    6:#include "dominion.h"
+        -:    7:#include "interface.h"
+        -:    8:#include "rngs.h"
+        -:    9:#include "myTestUtilities.h"
+        -:   10:
+        -:   11:
+function testUpdateCoins called 16 returned 100% blocks executed 86%
+       16:   12:void testUpdateCoins(int numCoppers, int numSilvers, int numGolds, int bonus){
+       16:   13:  int player = 0;
+        -:   14:  struct gameState state;
+       16:   15:  state.handCount[player] = numCoppers + numSilvers + numGolds;
+        -:   16:
+       16:   17:  int expectedCoinage = numCoppers*1 + numSilvers*2 + numGolds*3 + bonus;
+        -:   18:
+        -:   19:  int i;
+     1020:   20:  for(i = 0; i < numCoppers; i++){
+branch  0 taken 98%
+branch  1 taken 2% (fallthrough)
+     1004:   21:    state.hand[player][i] = copper;
+        -:   22:  }
+     1020:   23:  for(i ; i < numCoppers + numSilvers; i++){
+branch  0 taken 98%
+branch  1 taken 2% (fallthrough)
+     1004:   24:    state.hand[player][i] = silver;
+        -:   25:  }
+     1020:   26:  for(i ; i < numCoppers + numSilvers + numGolds; i++){
+branch  0 taken 98%
+branch  1 taken 2% (fallthrough)
+     1004:   27:    state.hand[player][i] = gold;
+        -:   28:  }
+        -:   29:
+       16:   30:  updateCoins(player, &state, bonus);
+call    0 returned 100%
+        -:   31:
+       16:   32:  if(state.coins != expectedCoinage){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   33:    printf("FAILED TEST: expected coinage -> %d \t actual coinage-> %d\n", expectedCoinage, state.coins);
+call    0 never executed
+    #####:   34:    printf("\t%d coppers, %d silvers, %d golds, %d bonus\n", numCoppers, numSilvers, numGolds, bonus);
+call    0 never executed
+        -:   35:  }
+       16:   36:}
+        -:   37:
+function main called 1 returned 100% blocks executed 100%
+        1:   38:int main(){
+        -:   39:
+        -:   40:  int bonus;
+        -:   41:
+        3:   42:  for(bonus = 0; bonus < 2; bonus++){
+branch  0 taken 67%
+branch  1 taken 33% (fallthrough)
+        2:   43:    testUpdateCoins(0,0,0,bonus);
+call    0 returned 100%
+        2:   44:    testUpdateCoins(1,0,0,bonus);
+call    0 returned 100%
+        2:   45:    testUpdateCoins(0,1,0,bonus);
+call    0 returned 100%
+        2:   46:    testUpdateCoins(0,0,1,bonus);
+call    0 returned 100%
+        2:   47:    testUpdateCoins(1,1,1,bonus);
+call    0 returned 100%
+        2:   48:    testUpdateCoins(MAX_HAND,0,0,bonus);
+call    0 returned 100%
+        2:   49:    testUpdateCoins(0,MAX_HAND,0,bonus);
+call    0 returned 100%
+        2:   50:    testUpdateCoins(0,0,MAX_HAND,bonus);
+call    0 returned 100%
+        -:   51:  }
+        -:   52:
+        -:   53:
+        -:   54:
+        -:   55:}

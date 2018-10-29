@@ -1247,7 +1247,6 @@ int play_adventurer(struct gameState* state, int currentPlayer){
   // BUG
   int drawntreasure;
   int cardDrawn;
-
   int temphand[MAX_HAND];// moved above the if statement
   int temphandIdx = 0;
 
@@ -1285,6 +1284,7 @@ int play_smithy(struct gameState* state, int currentPlayer, int handPos){
   //discard card from hand
   // BUG
   discardCard(currentPlayer, handPos, state, 0);
+
   return 0;
 }
 

@@ -1,0 +1,199 @@
+        -:    0:Source:cardtest4.c
+        -:    0:Graph:cardtest4.gcno
+        -:    0:Data:cardtest4.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <assert.h>
+        -:    2:#include <stdio.h>
+        -:    3:#include <stdlib.h>
+        -:    4:#include <string.h>
+        -:    5:#include <math.h>
+        -:    6:#include "dominion.h"
+        -:    7:#include "interface.h"
+        -:    8:#include "rngs.h"
+        -:    9:#include "myTestUtilities.h"
+        -:   10:
+function testCouncil_Room called 486 returned 100% blocks executed 81%
+      486:   11:void testCouncil_Room(struct gameState* state){
+        -:   12:  struct gameState stateCopy;
+      486:   13:  memcpy(&stateCopy, state, sizeof(struct gameState));
+      486:   14:  cardEffect(council_room, 0, 0, 0, state, stateCopy.handCount[stateCopy.whoseTurn]-1, NULL);
+call    0 returned 100%
+        -:   15:
+        -:   16:// council_room should not change number of actions
+      486:   17:  if(state->numActions != stateCopy.numActions){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   18:    printf("FAILED TEST:\n \tnumActions before council_room: %d\n\tnumActions after council_room: %d\n", stateCopy.numActions, state->numActions);
+call    0 never executed
+        -:   19:  }
+        -:   20:
+        -:   21:// council_room should add one buy
+      486:   22:  if(state->numBuys != stateCopy.numBuys + 1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      486:   23:    printf("FAILED TEST:\n \tnumBuys before council_room: %d\n\tnumBuys after council_room: %d\n", stateCopy.numBuys, state->numBuys);
+call    0 returned 100%
+        -:   24:  }
+        -:   25:
+        -:   26:// council_room shuld not change whose turn it is
+      486:   27:  if(state->whoseTurn != stateCopy.whoseTurn){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   28:    printf("FAILED TEST:\n \tcurrentPlayer before council_room: %d\n\tcurrentPlayer after council_room: %d\n", stateCopy.whoseTurn, state->whoseTurn);
+call    0 never executed
+        -:   29:  }
+        -:   30:  int i, cardsToDraw;
+     1944:   31:  for(i=0; i<state->numPlayers; i++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+     1458:   32:    if(i == state->whoseTurn){cardsToDraw=4-1;} // keeping in mind that the current player will discard the council room card
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+      972:   33:    else{cardsToDraw=1;}
+        -:   34:// did the handCount increase by 4 (or 1, depending on who we ask)
+     1458:   35:    if(state->handCount[i] != stateCopy.handCount[i] +cardsToDraw){
+branch  0 taken 6% (fallthrough)
+branch  1 taken 94%
+       81:   36:      printf("FAILED TEST:\n \thandCount before council_room: %d\n\thandCount after council_room: %d\n", stateCopy.handCount[i] , state->handCount[i]);
+call    0 returned 100%
+        -:   37:    }
+        -:   38:
+        -:   39:// if there were not enough cards in the deck to draw,
+     1458:   40:    if(stateCopy.deckCount[i] < cardsToDraw){
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+      486:   41:      if(stateCopy.discardCount[i] < cardsToDraw){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   42:        if(state->deckCount[i] != 0){
+branch  0 never executed
+branch  1 never executed
+    #####:   43:          printf("FAILED TEST: fewer than 4 cards available and resulting deck count was not 0\n");
+call    0 never executed
+    #####:   44:          printf("\tactual deckCount: %d\n", state->deckCount[i]);
+call    0 never executed
+        -:   45:        }
+        -:   46:      }
+        -:   47:// discard should have been moved to the deck
+      486:   48:      else if(state->deckCount[i] != stateCopy.discardCount[i]- cardsToDraw + stateCopy.handCount[i]){
+        -:   49:      // FAILED TEST: DECK IS NOT DECREMENTED AFTER MOVING DISCARD TO DECK
+        -:   50:      }
+        -:   51:    }
+        -:   52:    else{
+        -:   53:// there were enough cards in the deck; did the deckCount decrease by 4 (or 1)
+      972:   54:      if(state->deckCount[i] != stateCopy.deckCount[i] - cardsToDraw){
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+      324:   55:        printf("FAILED TEST:\n \tdeckCount before council_room: %d\n\tdeckCount after council_room: %d\n", stateCopy.deckCount[i] , state->deckCount[i]);
+call    0 returned 100%
+        -:   56:      }
+        -:   57:    }
+        -:   58:  }
+        -:   59:// did the most recent hand card come from the deck, or is it still the card being tested?
+      486:   60:  if(state->hand[state->whoseTurn][stateCopy.handCount[i]-1] == council_room){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   61:    printf("FAILED TEST: card in hand is still council_room\n");
+call    0 never executed
+        -:   62:  }
+        -:   63:
+        -:   64:// did the card get put in the discard?
+        -:   65:// not checking this for the other users. that seems like a lot
+      486:   66:  if(stateCopy.deckCount[stateCopy.whoseTurn] < 4){
+branch  0 taken 33% (fallthrough)
+branch  1 taken 67%
+      162:   67:    if(state->discardCount[state->whoseTurn] != 1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      162:   68:      printf("FAILED TEST: discard not 1 after moving discard to deck\n");
+call    0 returned 100%
+        -:   69:    }
+        -:   70:  }
+        -:   71:  else{
+      324:   72:    if(state->discardCount[state->whoseTurn] != stateCopy.discardCount[stateCopy.whoseTurn]+1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      324:   73:      printf("FAILED TEST:discard pile did not increment, deck was not depleted\n");
+call    0 returned 100%
+      324:   74:      printf("\tdiscardCount before: %d\n\tdiscardCount after: %d\n", stateCopy.discardCount[stateCopy.whoseTurn], state->discardCount[state->whoseTurn]);
+call    0 returned 100%
+        -:   75:    }
+        -:   76:  }
+        -:   77:
+      486:   78:  if(state->discard[state->whoseTurn][state->discardCount[state->whoseTurn]] != council_room){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      486:   79:    printf("FAILED TEST: top of discard pile is not council_room\n");
+call    0 returned 100%
+        -:   80:  }
+      486:   81:}
+        -:   82:
+        -:   83:
+function main called 1 returned 100% blocks executed 85%
+        1:   84:int main(){
+        -:   85:  struct gameState state;
+        1:   86:  int fillCard[] = {gardens, copper, adventurer};
+        1:   87:  int fillCardLength = 3;
+        1:   88:  int fillCardIdx_1 = 0;
+        1:   89:  int fillCardIdx_2 = 0;
+        1:   90:  int fillCardIdx_3 = 0;
+        -:   91:
+        1:   92:  int numPlayers[] = {2, MAX_PLAYERS};
+        1:   93:  int numPlayersLength = 2;
+        1:   94:  int numPlayersIdx = 0;
+        -:   95:
+        1:   96:  int handCount[] = {1, 5, MAX_HAND};
+        1:   97:  int handCountLength = 3;
+        1:   98:  int handCountIdx = 0;
+        -:   99:
+        1:  100:  int deckCount[] = {0, 5, MAX_DECK};
+        1:  101:  int deckCountLength = 3;
+        1:  102:  int deckCountIdx = 0;
+        -:  103: 
+        -:  104:  int i;
+        -:  105:
+        3:  106:  for(numPlayersIdx=0; numPlayersIdx < numPlayersLength; numPlayersIdx++){
+branch  0 taken 67%
+branch  1 taken 33% (fallthrough)
+        8:  107:	for(fillCardIdx_1=0; fillCardIdx_1 < fillCardLength; fillCardIdx_1++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+       24:  108:		for(handCountIdx=0; handCountIdx < handCountLength; handCountIdx++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+       72:  109:	  		for(fillCardIdx_2=0; fillCardIdx_2 < fillCardLength; fillCardIdx_2++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+      216:  110:				for(deckCountIdx=0; deckCountIdx < deckCountLength; deckCountIdx++){			 
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+      648:  111:					for(fillCardIdx_3=0; fillCardIdx_3 < fillCardLength; fillCardIdx_3++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+      486:  112:						constructGameStates(&state, numPlayers[numPlayersIdx], 0, handCount[handCountIdx], deckCount[deckCountIdx], fillCard[fillCardIdx_1], fillCard[fillCardIdx_2], fillCard[fillCardIdx_3],1 ,1);
+call    0 returned 100%
+        -:  113:
+      486:  114:					    if(handCount == MAX_HAND){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  115:      						for(i=0; i < state.numPlayers; i++){
+branch  0 never executed
+branch  1 never executed
+    #####:  116:						        state.handCount[i]--; // give each player room to draw a card (if current play has max cards, so does everyone else.)
+        -:  117:						      }
+    #####:  118:					        state.handCount[state.whoseTurn] -= 3; // give a hand that has a max number of cards room to draw more - otherwise a segfault
+    #####:  119:					        state.hand[state.whoseTurn][state.handCount[state.whoseTurn]-1] = council_room; // the last card in the hand is the one being played
+        -:  120:					    }
+        -:  121:
+      486:  122:					    testCouncil_Room(&state);
+call    0 returned 100%
+        -:  123:						
+        -:  124:					}
+        -:  125:				}
+        -:  126:			}
+        -:  127:		}
+        -:  128:	}
+        -:  129:  }
+        -:  130:
+        -:  131:}

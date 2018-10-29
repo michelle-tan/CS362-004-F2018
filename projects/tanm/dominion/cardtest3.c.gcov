@@ -1,0 +1,278 @@
+        -:    0:Source:cardtest3.c
+        -:    0:Graph:cardtest3.gcno
+        -:    0:Data:cardtest3.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:
+        -:    2:#include <assert.h>
+        -:    3:#include <stdio.h>
+        -:    4:#include <stdlib.h>
+        -:    5:#include <string.h>
+        -:    6:#include <math.h>
+        -:    7:#include "dominion.h"
+        -:    8:#include "interface.h"
+        -:    9:#include "rngs.h"
+        -:   10:#include "myTestUtilities.h"
+        -:   11:
+function testAdventurer called 486 returned 100% blocks executed 76%
+      486:   12:void testAdventurer(struct gameState* state){
+        -:   13:  struct gameState stateCopy;
+      486:   14:  memcpy(&stateCopy, state, sizeof(struct gameState));
+        -:   15:
+      486:   16:  int copy_currentHandCount = stateCopy.handCount[stateCopy.whoseTurn];
+      486:   17:  int copy_currentDeckCount = stateCopy.deckCount[stateCopy.whoseTurn];
+      486:   18:  int copy_currentDiscardCount = stateCopy.discardCount[stateCopy.whoseTurn];
+        -:   19:
+        -:   20:  // from statecopy, determine how many treasures will be drawn and from where
+        -:   21:  int i, card;
+      486:   22:  int deckTreasure=0;
+      486:   23:  int discardTreasure=0;
+    82296:   24:  for(i=0; i< copy_currentDeckCount;i++){
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+    81810:   25:    card = stateCopy.deck[stateCopy.whoseTurn][i];
+    81810:   26:    if(card== copper || card==silver || card==gold){
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+    27270:   27:      deckTreasure++;
+        -:   28:    }
+        -:   29:  }
+   161676:   30:  for(i=0; i< stateCopy.discardCount[stateCopy.whoseTurn];i++){
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+   161190:   31:    card = stateCopy.discard[stateCopy.whoseTurn][i];
+   161190:   32:    if(card== copper || card==silver || card==gold){
+branch  0 taken 67% (fallthrough)
+branch  1 taken 33%
+branch  2 taken 100% (fallthrough)
+branch  3 taken 0%
+branch  4 taken 0% (fallthrough)
+branch  5 taken 100%
+    53730:   33:      discardTreasure++;
+        -:   34:    }
+        -:   35:  }
+      486:   36:	printf("deckT: %d, discardT: %d\n", deckTreasure, discardTreasure);
+call    0 returned 100%
+      486:   37:  cardEffect(adventurer, 0, 0, 0, state, copy_currentHandCount-1, NULL);
+call    0 returned 100%
+      486:   38:  int currentHandCount = state->handCount[state->whoseTurn];
+      486:   39:  int currentDeckCount = state->deckCount[state->whoseTurn];
+        -:   40:
+        -:   41:// adventurer does not change numActions
+      486:   42:  if(state->numActions != stateCopy.numActions){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   43:    printf("FAILED TEST:\n \tnumActions before adventurer: %d\n\tnumActions after adventurer: %d\n", stateCopy.numActions, state->numActions);
+call    0 never executed
+        -:   44:  }
+        -:   45:
+        -:   46:// adventurer does not change numBuys
+      486:   47:  if(state->numBuys != stateCopy.numBuys){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   48:    printf("FAILED TEST:\n \tnumBuys before adventurer: %d\n\tnumBuys after adventurer: %d\n", stateCopy.numBuys, state->numBuys);
+call    0 never executed
+        -:   49:  }
+        -:   50:
+        -:   51:// adventurer does not change whoseTurn
+      486:   52:  if(state->whoseTurn != stateCopy.whoseTurn){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:   53:    printf("FAILED TEST:\n \tcurrentPlayer before adventurer: %d\n\tcurrentPlayer after adventurer: %d\n", stateCopy.whoseTurn, state->whoseTurn);
+call    0 never executed
+        -:   54:  }
+        -:   55:
+        -:   56:// did the handCount get increased by 0, 1, or 2 treasures?
+      486:   57:  if(deckTreasure+discardTreasure >= 2){ // if the treasures exist
+branch  0 taken 41% (fallthrough)
+branch  1 taken 59%
+      198:   58:    if(currentHandCount != copy_currentHandCount+2-1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      198:   59:      printf("FAILED TEST: hand should have gained net 1 cards\n");
+call    0 returned 100%
+      198:   60:      printf("\tactual gain: %d\n", currentHandCount - copy_currentHandCount);
+call    0 returned 100%
+        -:   61:    }
+        -:   62:  }
+        -:   63:  else{
+      288:   64:    if(currentHandCount != copy_currentHandCount+deckTreasure+discardTreasure-1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      288:   65:      printf("FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1\n");
+call    0 returned 100%
+      288:   66:	printf("handcount before %d after %d\n", copy_currentHandCount, currentHandCount);  
+call    0 returned 100%
+      288:   67:     printf("\texpected gain: %d\n\tactual gain: %d\n", deckTreasure+discardTreasure-1, currentHandCount - copy_currentHandCount);
+call    0 returned 100%
+        -:   68:    }
+        -:   69:  }
+        -:   70:
+        -:   71:// if there were not enough cards in the deck to draw,
+      486:   72:  if(deckTreasure+discardTreasure >= 2){
+branch  0 taken 41% (fallthrough)
+branch  1 taken 59%
+      198:   73:    if(deckTreasure>=2){
+branch  0 taken 55% (fallthrough)
+branch  1 taken 45%
+        -:   74:// both cards are drawn from the deck
+      108:   75:      if(currentDeckCount != copy_currentDeckCount- 2){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      108:   76:		printf("FAILED TEST: deck has 2 treasures but deck is not decremented by 2\n");
+call    0 returned 100%
+      108:   77:		printf("\tdeckCount before: %d\n\tdeckCount after: %d\n", copy_currentDeckCount, currentDeckCount);
+call    0 returned 100%
+        -:   78:      }
+        -:   79:    }
+       90:   80:    else if(discardTreasure >= 1 && deckTreasure == 1){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+branch  2 taken 0% (fallthrough)
+branch  3 taken 100%
+    #####:   81:      if(currentDeckCount != copy_currentDiscardCount- 1){
+branch  0 never executed
+branch  1 never executed
+    #####:   82:		printf("FAILED TEST: deck has 1 treasures but the discard that becomes the deck is not decremented by 1\n");
+call    0 never executed
+        -:   83:      }
+        -:   84:    }
+        -:   85:    else{ // both treasures come from discard
+       90:   86:      if(currentDeckCount != copy_currentDiscardCount- 2){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+       90:   87:		printf("FAILED TEST: deck has 0 treasures but the discard that becomes the deck is not decremented by 2\n");
+call    0 returned 100%
+        -:   88:      }
+        -:   89:    }
+        -:   90:  }
+      288:   91:  else if(deckTreasure+discardTreasure == 0){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      288:   92:	if(currentDeckCount != 0){
+branch  0 taken 63% (fallthrough)
+branch  1 taken 38%
+      180:   93:		printf("FAILED TEST: 0 treasures exist, deckCount should be 0\n");
+call    0 returned 100%
+      180:   94:		printf("\tdeckCount: %d\n", currentDeckCount);
+call    0 returned 100%
+        -:   95:    }
+        -:   96:  }
+        -:   97:  else{
+    #####:   98:    if(discardTreasure){
+branch  0 never executed
+branch  1 never executed
+    #####:   99:		if(currentDeckCount != copy_currentDiscardCount - 1){
+branch  0 never executed
+branch  1 never executed
+    #####:  100:		  	printf("FAILED TEST: one treasure exists in the discard, the deck should be the discard contents minus 1\n");
+call    0 never executed
+    #####:  101:			printf("\tactual deckCount: %d\n", currentDeckCount);
+call    0 never executed
+        -:  102:        }
+        -:  103:	}
+    #####:  104:	if(deckTreasure){
+branch  0 never executed
+branch  1 never executed
+    #####:  105:		if(currentDeckCount != 0){
+branch  0 never executed
+branch  1 never executed
+    #####:  106:			printf("FAILED TEST: one treasure existed in the deck. Discard is moved to deck and is also exhausted.\n");
+call    0 never executed
+    #####:  107:			printf("\tactual deckCount: %d\n", currentDeckCount);
+call    0 never executed
+        -:  108:		}
+        -:  109:	}
+        -:  110:  }
+        -:  111:
+        -:  112:
+        -:  113:// did the most recent hand card come from the deck, or is it still the card being tested?
+      486:  114:  if(state->hand[state->whoseTurn][copy_currentHandCount] == adventurer){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  115:    printf("FAILED TEST: last card in hand is still adventurer\n");
+call    0 never executed
+        -:  116:  }
+        -:  117:
+        -:  118:// did the card get put in the discard? gotta search all cards to know for sure
+      486:  119:  int seenFlag=0;
+   161676:  120:  for(i=0; i < state->discardCount[state->whoseTurn]; i++){
+branch  0 taken 99%
+branch  1 taken 1% (fallthrough)
+   161190:  121:    if(state->discard[state->whoseTurn][i] == adventurer){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  122:      seenFlag=1;
+    #####:  123:      break;
+        -:  124:    }
+        -:  125:  }
+      486:  126:  if(!seenFlag){
+branch  0 taken 100% (fallthrough)
+branch  1 taken 0%
+      486:  127:    printf("FAILED TEST: discard pile does not contain adventurer\n");
+call    0 returned 100%
+        -:  128:  }
+      486:  129:}
+        -:  130:
+function main called 1 returned 100% blocks executed 96%
+        1:  131:int main(){
+        -:  132:  struct gameState state;
+        1:  133:  int fillCard[] = {gardens, copper, village};
+        1:  134:  int fillCardLength = 3;
+        1:  135:  int fillCardIdx_1 = 0;
+        1:  136:  int fillCardIdx_2 = 0;
+        1:  137:  int fillCardIdx_3 = 0;
+        -:  138:
+        1:  139:  int numPlayers[] = {2, MAX_PLAYERS};
+        1:  140:  int numPlayersLength =2;
+        1:  141:  int numPlayersIdx = 0;
+        -:  142:
+        1:  143:  int handCount[] = {1, 5, MAX_HAND};
+        1:  144:  int handCountLength = 3;
+        1:  145:  int handCountIdx = 0;
+        -:  146:
+        1:  147:  int deckCount[] = {0, 5, MAX_DECK};
+        1:  148:  int deckCountLength = 3;
+        1:  149:  int deckCountIdx = 0;
+        -:  150: 
+        3:  151:  for(numPlayersIdx=0; numPlayersIdx < numPlayersLength; numPlayersIdx++){
+branch  0 taken 67%
+branch  1 taken 33% (fallthrough)
+        8:  152:	for(fillCardIdx_1=0; fillCardIdx_1 < fillCardLength; fillCardIdx_1++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+       24:  153:		for(handCountIdx=0; handCountIdx < handCountLength; handCountIdx++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+       72:  154:	  		for(fillCardIdx_2=0; fillCardIdx_2 < fillCardLength; fillCardIdx_2++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+      216:  155:				for(deckCountIdx=0; deckCountIdx < deckCountLength; deckCountIdx++){			 
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+      648:  156:					for(fillCardIdx_3=0; fillCardIdx_3 < fillCardLength; fillCardIdx_3++){
+branch  0 taken 75%
+branch  1 taken 25% (fallthrough)
+      486:  157:						constructGameStates(&state, numPlayers[numPlayersIdx], 0, handCount[handCountIdx], deckCount[deckCountIdx], fillCard[fillCardIdx_1], fillCard[fillCardIdx_2], fillCard[fillCardIdx_3],1 ,1);
+call    0 returned 100%
+        -:  158:
+      486:  159:					    if(handCount == MAX_HAND){
+branch  0 taken 0% (fallthrough)
+branch  1 taken 100%
+    #####:  160:					      state.handCount[state.whoseTurn] -= 2;
+        -:  161:					    }
+      486:  162:    					state.hand[state.whoseTurn][state.handCount[state.whoseTurn]-1] = adventurer;
+      486:  163:					    testAdventurer(&state);
+call    0 returned 100%
+        -:  164:						
+        -:  165:					}
+        -:  166:				}
+        -:  167:			}
+        -:  168:		}
+        -:  169:	}
+        -:  170:  }
+        -:  171:}
