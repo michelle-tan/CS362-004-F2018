@@ -33,23 +33,37 @@ cardtest3: dominion.o cardtest3.c myTestUtilities.o rngs.o
 cardtest4: dominion.o cardtest4.c myTestUtilities.o rngs.o
 	gcc -o cardtest4 cardtest4.c -g dominion.o rngs.o myTestUtilities.c $(CFLAGS)
 
+randomtestadventurer: dominion.o randomtestadventurer.c myTestUtilities.o rngs.o
+	gcc -o randomtestadventurer randomtestadventurer.c -g dominion.o rngs.o myTestUtilities.c $(CFLAGS)
+
+randomtestcard1: dominion.o randomtestcard1.c myTestUtilities.o rngs.o
+	gcc -o randomtestcard1 randomtestcard1.c -g dominion.o rngs.o myTestUtilities.c $(CFLAGS)
+
+randomtestcard2: dominion.o randomtestcard2.c myTestUtilities.o rngs.o
+	gcc -o randomtestcard2 randomtestcard2.c -g dominion.o rngs.o myTestUtilities.c $(CFLAGS)
+
+randomtestadventurer.out: randomtestadventurer dominion.o
+	./randomtestadventurer > randomtestadventurer.out
+	gcov dominion.c -bf >> randomtestadventurer.out
+
+randomtestcard1.out: randomtestcard1 dominion.o
+	./randomtestcard1 > randomtestcard1.out
+	gcov dominion.c -bf >> randomtestcard1.out
+
+randomtestcard2.out: randomtestcard2 dominion.o
+	./randomtestcard2 > randomtestcard2.out
+	gcov dominion.c -bf >> randomtestcard2.out
+
 unittestresults: unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 dominion.o
 	./unittest1 1>&2 unittestresults.out
-	gcov unittest1.c -b >> unittestresults.out 2>&1
-	./unittest2 >> unittestresults.out 2>&1
-	gcov unittest2.c -b >> unittestresults.out 2>&1
-	./unittest3 >> unittestresults.out 2>&1
-	gcov unittest3.c -b >> unittestresults.out 2>&1
-	./unittest4 >> unittestresults.out 2>&1
-	gcov unittest4.c -b >> unittestresults.out 2>&1
-	./cardtest1 >> unittestresults.out 2>&1
-	gcov cardtest1.c -b >> unittestresults.out 2>&1
-	./cardtest2 >> unittestresults.out 2>&1
-	gcov cardtest2.c -b >> unittestresults.out 2>&1
-	./cardtest3 >> unittestresults.out 2>&1
-	gcov cardtest3.c -b >> unittestresults.out 2>&1
-	./cardtest4 >> unittestresults.out 2>&1
-	gcov cardtest4.c -b >> unittestresults.out 2>&1
+	./unittest2 >> unittestresults.out
+	./unittest3 >> unittestresults.out
+	./unittest4 >> unittestresults.out
+	./cardtest1 >> unittestresults.out
+	./cardtest2 >> unittestresults.out
+	./cardtest3 >> unittestresults.out
+	./cardtest4 >> unittestresults.out
+	gcov dominion.c -bf >> unittestresults.out 2>&1
 
 playdom: dominion.o playdom.c
 	gcc -o playdom playdom.c -g dominion.o rngs.o $(CFLAGS)
@@ -80,5 +94,6 @@ player: player.c interface.o
 
 all: playdom player 
 
+# make clean no longer removes .out files
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so testDrawCard testDrawCard.exe
