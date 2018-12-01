@@ -1,0 +1,2219 @@
+4, 500, 500
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -65
+	expected gain: -1
+	actual gain: -66
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -69
+	expected gain: -1
+	actual gain: -70
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -73
+	expected gain: -1
+	actual gain: -74
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 5
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -77
+	expected gain: -1
+	actual gain: -78
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -2
+	expected gain: -1
+	actual gain: -502
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -2
+	expected gain: -1
+	actual gain: -502
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: 1
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 1 after -106
+	expected gain: -1
+	actual gain: -107
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 0
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 10
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: -1
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: -1
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: -1
+	 deckCount: 500
+	FAILED TEST:
+ 	numBuys before adventurer: 1
+	numBuys after adventurer: 14
+FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1 after -106
+	expected gain: -1
+	actual gain: -105
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -2
+	expected gain: -1
+	actual gain: -502
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: 2
+	 handCount: 500
+	 deckCount: 500
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before 500 after -106
+	expected gain: -1
+	actual gain: -606
+Constructing new state:
+	numPlayers: -1
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -106 after -112
+	expected gain: -1
+	actual gain: -6
+Constructing new state:
+	numPlayers: -1
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -112 after -408
+	expected gain: -1
+	actual gain: -296
+Constructing new state:
+	numPlayers: -1
+	 handCount: 1
+	 deckCount: 0
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -408 after -1388
+	expected gain: -1
+	actual gain: -980
+Constructing new state:
+	numPlayers: -1
+	 handCount: 1
+	 deckCount: -1
+	FAILED TEST: hand should have gained 0 or 1 cards and subtracted 1
+handcount before -1388 after -1477
+	expected

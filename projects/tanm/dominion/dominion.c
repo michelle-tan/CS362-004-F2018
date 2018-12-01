@@ -666,7 +666,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   switch( card )
     {
     case adventurer:
-      return play_adventurer(state, currentPlayer);
+      return play_adventurer(state, currentPlayer, handPos);
   
     case council_room:
       return play_council_room(state, currentPlayer, handPos);
@@ -1145,6 +1145,11 @@ int discardCard(int handPos, int currentPlayer, struct gameState *state, int tra
       state->playedCards[state->playedCardCount] = state->hand[currentPlayer][handPos];
       state->playedCardCount++;
     }
+	
+//	if(state->discardCount[currentPlayer] == MAX_DECK){return -1;}
+
+//	state->discard[currentPlayer][state->discardCount[currentPlayer]] = state->hand[currentPlayer][handPos];
+//	state->discardCount[currentPlayer]++;
 
   //set played card to -1
   state->hand[currentPlayer][handPos] = -1;
@@ -1165,7 +1170,7 @@ int discardCard(int handPos, int currentPlayer, struct gameState *state, int tra
       //replace discarded card with last card in hand
       state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - 1)];
       //set last card to -1
-      state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = -1;
+ //     state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = -1;
       //reduce number of cards in hand
       state->handCount[currentPlayer]--;
     }
@@ -1242,34 +1247,36 @@ int updateCoins(int player, struct gameState *state, int bonus)
 
 // adventurer
 
-int play_adventurer(struct gameState* state, int currentPlayer){
+int play_adventurer(struct gameState* state, int currentPlayer, int handPos){
 
   // BUG
-  int drawntreasure;
+  int drawntreasure = 0;
   int cardDrawn;
   int temphand[MAX_HAND];// moved above the if statement
   int temphandIdx = 0;
-
+int i=0;
   // BUG
-  while(drawntreasure < 3){
+  while(drawntreasure < 2){
       if(state->deckCount[currentPlayer] < 1){
         shuffle(currentPlayer, state);
       }
       drawCard(currentPlayer, state);
+i++;
       cardDrawn = state->hand[currentPlayer][state->handCount[currentPlayer]-1];//top card of hand is most recently drawn card.
         if (cardDrawn == copper || cardDrawn == silver || cardDrawn == gold){
         drawntreasure++;
-      }
+    }
       else{
         temphand[temphandIdx]=cardDrawn;
         state->handCount[currentPlayer]--; //this should just remove the top card (the most recently drawn one).
         temphandIdx++;
       }
   }
-  while(temphandIdx > 0){
+  while(temphandIdx-1 >= 0){
     state->discard[currentPlayer][state->discardCount[currentPlayer]++] = temphand[temphandIdx-1]; // discard all cards in play that have been drawn
     temphandIdx--;
   }
+//	discardCard(handPos, currentPlayer, state, 0);
     return 0;
 }
 

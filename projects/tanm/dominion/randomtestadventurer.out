@@ -3,181 +3,152 @@
 ########## TEST NUMBER 1 ##############
 FAILED TEST:
 	 hand should have gained net 1 cards
-	 actual net gain to handCount: 0
+	 actual net gain to handCount: 2
 FAILED TEST:
 	 deck has 2 treasures but deck is not decremented by 2
-	 deckCount before: 34
-	 deckCount after: 34
+	 deckCount before: 44
+	 deckCount after: 32
 FAILED TEST:
 	 deck has 2 treasures, discard not incremented by 1
-	 discardCount before: 340
-	 discardCount after: 340
+	 discardCount before: 35
+	 discardCount after: 46
 FAILED TEST: card in hand is still adventurer
 
 
 ########## TEST NUMBER 2 ##############
 FAILED TEST:
 	 hand should have gained net 1 cards
-	 actual net gain to handCount: 0
+	 actual net gain to handCount: 2
 FAILED TEST:
 	 deck has 2 treasures but deck is not decremented by 2
-	 deckCount before: 339
-	 deckCount after: 339
+	 deckCount before: 63
+	 deckCount after: 51
 FAILED TEST:
 	 deck has 2 treasures, discard not incremented by 1
-	 discardCount before: 97
-	 discardCount after: 97
+	 discardCount before: 259
+	 discardCount after: 270
 FAILED TEST: card in hand is still adventurer
 
 
 ########## TEST NUMBER 3 ##############
 FAILED TEST:
 	 hand should have gained net 1 cards
-	 actual net gain to handCount: 0
+	 actual net gain to handCount: 2
 FAILED TEST:
 	 deck has 2 treasures but deck is not decremented by 2
-	 deckCount before: 391
-	 deckCount after: 391
+	 deckCount before: 207
+	 deckCount after: 180
 FAILED TEST:
 	 deck has 2 treasures, discard not incremented by 1
-	 discardCount before: 74
-	 discardCount after: 74
+	 discardCount before: 258
+	 discardCount after: 284
 FAILED TEST: card in hand is still adventurer
 
 
 ########## TEST NUMBER 4 ##############
 FAILED TEST:
 	 hand should have gained net 1 cards
-	 actual net gain to handCount: 0
+	 actual net gain to handCount: 2
 FAILED TEST:
 	 deck has 2 treasures but deck is not decremented by 2
-	 deckCount before: 457
-	 deckCount after: 457
+	 deckCount before: 269
+	 deckCount after: 263
 FAILED TEST:
 	 deck has 2 treasures, discard not incremented by 1
-	 discardCount before: 17
-	 discardCount after: 17
+	 discardCount before: 105
+	 discardCount after: 110
 FAILED TEST: card in hand is still adventurer
 
 
 ########## TEST NUMBER 5 ##############
 FAILED TEST:
 	 hand should have gained net 1 cards
-	 actual net gain to handCount: 0
+	 actual net gain to handCount: 2
 FAILED TEST:
 	 deck has 2 treasures but deck is not decremented by 2
-	 deckCount before: 456
-	 deckCount after: 456
+	 deckCount before: 262
+	 deckCount after: 259
 FAILED TEST:
 	 deck has 2 treasures, discard not incremented by 1
-	 discardCount before: 37
-	 discardCount after: 37
+	 discardCount before: 28
+	 discardCount after: 30
 FAILED TEST: card in hand is still adventurer
-FAILED TEST: discard pile does not contain adventurer
 
 
 ########## TEST NUMBER 6 ##############
 FAILED TEST:
 	 hand should have gained net 1 cards
-	 actual net gain to handCount: 0
+	 actual net gain to handCount: 2
 FAILED TEST:
 	 deck has 2 treasures but deck is not decremented by 2
-	 deckCount before: 258
-	 deckCount after: 258
+	 deckCount before: 130
+	 deckCount after: 125
 FAILED TEST:
 	 deck has 2 treasures, discard not incremented by 1
-	 discardCount before: 144
-	 discardCount after: 144
+	 discardCount before: 306
+	 discardCount after: 310
 FAILED TEST: card in hand is still adventurer
 
 
 ########## TEST NUMBER 7 ##############
 FAILED TEST:
 	 hand should have gained net 1 cards
-	 actual net gain to handCount: 0
+	 actual net gain to handCount: 2
 FAILED TEST:
 	 deck has 2 treasures but deck is not decremented by 2
-	 deckCount before: 138
-	 deckCount after: 138
+	 deckCount before: 498
+	 deckCount after: 493
 FAILED TEST:
 	 deck has 2 treasures, discard not incremented by 1
-	 discardCount before: 299
-	 discardCount after: 299
+	 discardCount before: 1
+	 discardCount after: 5
 FAILED TEST: card in hand is still adventurer
 
 
 ########## TEST NUMBER 8 ##############
 FAILED TEST:
 	 hand should have gained net 1 cards
-	 actual net gain to handCount: 0
+	 actual net gain to handCount: 2
 FAILED TEST:
 	 deck has 2 treasures but deck is not decremented by 2
-	 deckCount before: 103
-	 deckCount after: 103
+	 deckCount before: 122
+	 deckCount after: 117
 FAILED TEST:
 	 deck has 2 treasures, discard not incremented by 1
-	 discardCount before: 288
-	 discardCount after: 288
+	 discardCount before: 30
+	 discardCount after: 34
 FAILED TEST: card in hand is still adventurer
 
 
 ########## TEST NUMBER 9 ##############
 FAILED TEST:
 	 hand should have gained net 1 cards
-	 actual net gain to handCount: 0
+	 actual net gain to handCount: 2
 FAILED TEST:
 	 deck has 2 treasures but deck is not decremented by 2
-	 deckCount before: 288
-	 deckCount after: 288
+	 deckCount before: 164
+	 deckCount after: 153
 FAILED TEST:
 	 deck has 2 treasures, discard not incremented by 1
-	 discardCount before: 91
-	 discardCount after: 91
+	 discardCount before: 171
+	 discardCount after: 181
 FAILED TEST: card in hand is still adventurer
 
 
 ########## TEST NUMBER 10 ##############
 FAILED TEST:
 	 hand should have gained net 1 cards
-	 actual net gain to handCount: 0
+	 actual net gain to handCount: 2
 FAILED TEST:
 	 deck has 2 treasures but deck is not decremented by 2
-	 deckCount before: 175
-	 deckCount after: 175
+	 deckCount before: 98
+	 deckCount after: 84
 FAILED TEST:
 	 deck has 2 treasures, discard not incremented by 1
-	 discardCount before: 302
-	 discardCount after: 302
+	 discardCount before: 254
+	 discardCount after: 267
 FAILED TEST: card in hand is still adventurer
-Function 'play_mine'
-Lines executed:0.00% of 15
-Branches executed:0.00% of 14
-Taken at least once:0.00% of 14
-Calls executed:0.00% of 5
-
-Function 'play_village'
-Lines executed:0.00% of 5
-No branches
-Calls executed:0.00% of 2
-
-Function 'play_council_room'
-Lines executed:0.00% of 8
-Branches executed:0.00% of 6
-Taken at least once:0.00% of 6
-Calls executed:0.00% of 3
-
-Function 'play_smithy'
-Lines executed:0.00% of 5
-Branches executed:0.00% of 2
-Taken at least once:0.00% of 2
-Calls executed:0.00% of 2
-
-Function 'play_adventurer'
-Lines executed:31.25% of 16
-Branches executed:33.33% of 12
-Taken at least once:16.67% of 12
-Calls executed:0.00% of 2
-
+FAILED TEST: discard pile does not contain adventurer
 Function 'updateCoins'
 Lines executed:0.00% of 11
 Branches executed:0.00% of 8
@@ -197,10 +168,40 @@ Taken at least once:0.00% of 6
 No calls
 
 Function 'cardEffect'
-Lines executed:4.10% of 195
-Branches executed:13.94% of 165
-Taken at least once:1.82% of 165
-Calls executed:3.64% of 55
+Lines executed:5.78% of 173
+Branches executed:15.23% of 151
+Taken at least once:1.99% of 151
+Calls executed:4.08% of 49
+
+Function 'baronEffect'
+Lines executed:0.00% of 29
+Branches executed:0.00% of 18
+Taken at least once:0.00% of 18
+Calls executed:0.00% of 8
+
+Function 'feastEffect'
+Lines executed:0.00% of 16
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 5
+
+Function 'council_roomEffect'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'smithyEffect'
+Lines executed:0.00% of 5
+Branches executed:0.00% of 2
+Taken at least once:0.00% of 2
+Calls executed:0.00% of 2
+
+Function 'adventurerEffect'
+Lines executed:93.75% of 16
+Branches executed:100.00% of 12
+Taken at least once:91.67% of 12
+Calls executed:50.00% of 2
 
 Function 'getCost'
 Lines executed:0.00% of 30
@@ -209,9 +210,9 @@ Taken at least once:0.00% of 28
 No calls
 
 Function 'drawCard'
-Lines executed:0.00% of 22
-Branches executed:0.00% of 6
-Taken at least once:0.00% of 6
+Lines executed:36.36% of 22
+Branches executed:33.33% of 6
+Taken at least once:16.67% of 6
 Calls executed:0.00% of 1
 
 Function 'getWinners'
@@ -305,9 +306,9 @@ Taken at least once:0.00% of 4
 No calls
 
 File 'dominion.c'
-Lines executed:2.70% of 556
-Branches executed:6.47% of 417
-Taken at least once:1.20% of 417
-Calls executed:2.11% of 95
+Lines executed:6.25% of 560
+Branches executed:8.87% of 417
+Taken at least once:3.60% of 417
+Calls executed:3.16% of 95
 Creating 'dominion.c.gcov'
 

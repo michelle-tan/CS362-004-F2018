@@ -21,6 +21,7 @@ void printState_(struct gameState* state){
   for(i = curse ; i < treasure_map + 1; i++){
     printf("\t%d x %d -> %d embargoTokens\n", state->supplyCount[i], i, state->embargoTokens[i]);
   }
+  printf("there are %d players\n", state->numPlayers);
   printf("It is %d's turn.\n", state->whoseTurn);
   for(i = 0; i < maxplayers; i++){
     printf("Player %d has...\n", i);
@@ -167,7 +168,7 @@ void constructRandomGameState(struct gameState* state){
 }
 
 void constructGameStates(struct gameState* state, int numPlayers, int whoseTurn, int handCount, int deckCount, int handType, int deckType, int discardType, int numActions, int numBuys){
-
+//printf("numPlayers = %d\n", numPlayers);
 	state->numActions = numActions;
 	state->numBuys = numBuys;
 	state->numPlayers = numPlayers;
@@ -188,4 +189,6 @@ void constructGameStates(struct gameState* state, int numPlayers, int whoseTurn,
 			state->discard[i][j] = discardType;
 		}
 	}
+//printState_(state);
+
 }
